@@ -13,13 +13,8 @@ $(function() {
 						  $('.single-slide').css({'margin-left': 'slideWidth*slideIndex',
 												  'width': '20%'});
 						 });
-	$('.prev-slide').on('click', function slide(slideIndex - 1){
+	function slide(newSlideIndex) {
 		
-	});
-	
-	$('.next-slide').on('click', function slide(slideIndex + 1){
-		
-	});
-
+	}
 });
 console.log(slider);
