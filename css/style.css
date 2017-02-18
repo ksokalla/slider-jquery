@@ -1,3 +1,7 @@
+body {
+	margin: 0;
+}
+
 #slider {
 	position: relative;
 	overflow: hidden;
@@ -19,6 +23,7 @@ img {
 	border: none;
 	height: 100%;
 	min-height: 100%;
+	width: 100%;
 }
 
 .slider-caption {
