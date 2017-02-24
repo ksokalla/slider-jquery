@@ -14,10 +14,15 @@ $(function() {
 		$(this).css({'left': slideWidth*slideIndex + '%' });
 		$(this).css({'width': slideWidth+'%'});
 	});
-					
-		function slide (newSlideIndex) {
-			if (newSlideIndex == 0 || newSlideIndex == 5) {
-				break;
-			}
+	document.addEventListener("onclick", slide()); 
+	
+	function slide (newSlideIndex) {
+		if (newSlideIndex == 0 || newSlideIndex == 5) {
+			break;
+	    } else {
+			var slideCaption = ("Slide nr" + slideIndex);
+			$(slideCaption).hide();
 		}
+	}  
+	
 });
