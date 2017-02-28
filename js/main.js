@@ -15,6 +15,7 @@ $(function() {
 		$(this).css({'width': slideWidth+'%'});
 	});
 	
+	
     document.getElementsByClassName('.slider-click').addEventListener("click", slide())
 		
 	
