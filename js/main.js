@@ -14,15 +14,33 @@ $(function() {
 		$(this).css({'left': slideWidth*slideIndex + '%' });
 		$(this).css({'width': slideWidth+'%'});
 	});
-	document.addEventListener("onclick", slide()); 
 	
-	function slide (newSlideIndex) {
-		if (newSlideIndex == 0 || newSlideIndex == 5) {
-			break;
-	    } else {
-			var slideCaption = ("Slide nr" + slideIndex);
-			$(slideCaption).hide();
-		}
-	}  
+    document.getElementsByClassName('.slider-click').addEventListener("click", slide())
+		
 	
+			var slideCaption;
+
+			$('.prev-slide').on("click", function() {
+				if (slideIndex > 0) {
+					slideIndex = (slideIndex - 1) && ("Slide nr" + slideIndex) } 
+				else { 
+					return
+					}
+
+			});			
+
+			$('.next-slide').on("click", function() {
+				if (slideIndex < 5) {
+					slideIndex = (slideIndex + 1) && ("Slide nr" + slideIndex) } 
+				else { 
+					return
+					}
+		
+	});			
+
 });
+
+
+
+
+
